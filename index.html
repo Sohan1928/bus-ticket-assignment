@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus-Ticket</title>
-    <link rel="icon" href="./images/transport.png" type="png/icon" />
     <!-- Flowbite and Tailwind -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
@@ -330,7 +329,7 @@
           <ul class="flex flex-col justify-center items-center lg:col-span-2">
             <li><img src="./images/fare.png" alt="fare" /></li>
             <li class="text-[#030712] text-xl lg:text-[32px] font-bold">
-              550 Taka
+              <span id="price">550</span> Taka
             </li>
             <li class="text-[#03071299] text-lg lg:text-2xl font-semibold">
               Per Seat
@@ -361,7 +360,7 @@
               <li id="selected" class="hidden gap-2 text-[#1DD100]">
                 <img
                   src="./images/seat-green-filled.png"
-                  alt="seat-gray"
+                  alt="seat"
                 />Selected
               </li>
             </ul>
@@ -395,34 +394,34 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         A1
                       </button>
                     </td>
                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                      <button
+                      <button 
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         A2
                       </button>
                     </td>
                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                      <button
+                      <button 
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         A3
                       </button>
                     </td>
                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                      <button
+                      <button 
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         A4
                       </button>
@@ -439,19 +438,19 @@
                       B
                     </th>
                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                      <button
+                      <button 
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         B1
                       </button>
                     </td>
                     <td class="px-3 py-4 col-span-1 md:col-span-2">
-                      <button
+                      <button 
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         B2
                       </button>
@@ -460,7 +459,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         B3
                       </button>
@@ -469,7 +468,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         B4
                       </button>
@@ -489,7 +488,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         C1
                       </button>
@@ -498,7 +497,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         C2
                       </button>
@@ -507,7 +506,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         C3
                       </button>
@@ -516,7 +515,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         C4
                       </button>
@@ -536,7 +535,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         D1
                       </button>
@@ -545,7 +544,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         D2
                       </button>
@@ -554,7 +553,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         D3
                       </button>
@@ -563,7 +562,7 @@
                       <button
                         id="bookingBtn"
                         type="button"
-                        class="text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
+                        class="btn text-[#03071280] bg-[#F7F8F8] hover:shadow-lg font-medium rounded-xl text-lg px-10 py-4 focus:outline-none"
                       >
                         D4
                       </button>
@@ -644,7 +643,7 @@
                 <form>
                   <label
                     class="block mb-2 text-base font-semibold text-[#030712]"
-                    >Passenger Name</label
+                    >Passenger Name*</label
                   >
                   <input
                     type="text"
